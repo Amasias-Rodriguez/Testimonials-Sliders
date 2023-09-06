@@ -48,3 +48,38 @@ body {
     }
   }
 }
+
+.text-container {
+  margin-top: 25px;
+  padding-top: 37px;
+  position: relatie;
+  & .quotes {
+    width: 60px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  & .user-testimonial {
+    width: 311px;
+    margin: 0 auto 19px;
+    font-size: 1.225rem;
+    line-height: 1.5rem;
+    text-align: center;
+    color: var(--DarkBlue);
+    font-weight: 300;
+  }
+  .user-details {
+    & .user-name,
+    .user-degree {
+      font-size: 0.9375rem;
+      text-align: center;
+    }
+    & .user-name {
+      color: var(--DarkBlue);
+    }
+    & .user-degree {
+      color: var(--GrayishBlue);
+    }
+  }
+}
