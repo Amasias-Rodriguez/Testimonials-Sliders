@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Inter:wght@300;500;700&display=swap");
+
+:root {
+  --DarkBlue: hsl(240, 38%, 20%);
+  --GrayishBlue: hsl(240, 18%, 77%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter";
+}
+
+.image-container {
+  width: 327px;
+  height: 308px;
+  background-image: url(./images/pattern-bg.svg);
+  background-size: contain;
+  text-align: center;
+  padding-top: 30px;
+  margin: 24px auto 0;
+  position: relative;
+  & .image {
+    width: 80%;
+    border-radius: 4px;
+  }
+  & .arrows-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 80px;
+    height: 40px;
+    background-color: white;
+    box-shadow: 1px 1px 5px;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    & .arrow {
+      cursor: pointer;
+    }
+  }
+}
